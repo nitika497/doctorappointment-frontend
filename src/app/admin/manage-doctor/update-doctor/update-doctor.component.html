@@ -1,0 +1,78 @@
+<section id="contact" class="contact1">
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100"style="background: var(--bs-success);">
+
+
+        <div class="row gy-4 mt-1">
+
+            <div class="col-lg-3"></div>
+
+            <div class="col-lg-6">
+                <form [formGroup]="doctorForm" role="form" 
+                class="php-email-form" (submit)="update()">
+                <h1 class="display-6 mb-4">UpdateDoctor
+                </h1>
+                    <div class="row gy-4">
+                        <div class="col-lg-12 form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name"
+                                formControlName="name" required>
+                            <small class="text-danger"
+                                *ngIf="doctorForm.controls['Name'].invalid && doctorForm.controls['Name'].touched">Incorrect
+                                Format</small>
+                        </div>
+                        <div class="col-lg-12 form-group">
+                            <input type="text" class="form-control"
+                             id="education" placeholder="education" formControlName="education">
+                            
+                            <small class="text-danger"
+                                *ngIf="doctorForm.controls['education'].invalid && doctorForm.controls['education'].touched">Required.</small>
+                        </div>
+                        <div class="col-lg-12 form-group">
+                            <input type="text" class="form-control" id="specialist" 
+                            placeholder="specialist" required formControlName="specialist">
+                        </div>
+
+                        <div class="col-lg-12 form-group">
+                            <input type="text" class="form-control" id="description" 
+                            placeholder="description" required formControlName="description">
+                        </div>
+
+
+                        <div class="col-lg-12 form-group">
+                            <select name="Choose Department" class="form-select" id=""
+                             formControlName="departmentId" >
+                                <option value="" >Choose Department</option>
+                                <option value="">Neurology</option>
+                                <option value="">bnnbn</option>
+                                <option value="">bbb</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12 form-group">
+                            <input type="text" class="form-control" id="Experienced" 
+                            placeholder="Experienced" required formControlName="experience">
+                        </div>
+
+
+                        <div class="class col-lg-12 form-group">
+                            <input type="file" class="form-control" id="Choose Picture" 
+                            placeholder="Choose Picture" required formControlName="image">
+                        </div>
+
+                    
+
+
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-primary-outline-0
+                        w-90 py-2 px-2 mt-3 mb-4 ">UPDATE</button>
+                    </div>
+
+                </form>
+            </div> 
+             <!-- End Contact Form  -->
+
+            <div class="col-lg-3"></div>
+        </div>
+
+    </div>
+</section>

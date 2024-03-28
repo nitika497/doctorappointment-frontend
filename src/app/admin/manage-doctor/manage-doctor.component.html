@@ -1,0 +1,69 @@
+<main id="main">
+    <div class="container-fluid bg-breadcrumb py-5">
+        <div class="container text-center py-5">
+            <h3 class="text-white display-3 mb-4">Manage-doctor</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item active text-white">
+                    <a routerLink="/admin-layout/dashboard">Dashboard</a></li>
+            </ol>    
+        </div>
+    </div>
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row position-relative">
+                <div class="col-lg-6 p-3">
+                    <h3>Doctor List</h3>
+                    
+                </div>
+                <div class="col-lg-6 p-3 text-end">
+                    <button class="btn btn-warning"
+                     routerLink="/admin-layout/adddoctor">Add Doctor</button>
+                </div>
+                <div class="col-12 p-3">
+                    <table class="table table-warning">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Education</th>
+                            <th scope="col">Specialist</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Experienced</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>rahul</td>
+                            <td>gnm</td>
+                            <td>
+                               heart
+                            </td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Ent</td>
+                                <td>5year</td>
+
+                            <td>
+                                <button class="btn btn-success btn-sm"
+                                 routerLink="/admin-layout/updatedoctor">
+                                    <i class="bi bi-pen-fill"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm ms-4"
+                                routerLink="/admin-layout/updatedoctor">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

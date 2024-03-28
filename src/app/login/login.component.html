@@ -1,0 +1,42 @@
+<!-- Contact Start -->
+<div class="container-fluid contact py-5" style="background: var(--bs-primary);">
+    <!-- <div class="container pt-5">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <h1 class="display-3 text-white mb-4">Contact Us</h1>
+                    <p class="text-white fs-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-secondary" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                </div>
+            </div> -->
+    <div class="col-lg-4 mx-auto">
+        <div class="contact-form rounded p-5">
+            <form [ FormGroup]="loginForms" (submit)="loginSubmit()">
+                <h6 routerLink="/customer-layout/home">Go To Home</h6>
+                <h1 class="display-6 mb-4">LOGIN
+                </h1>
+                <div class="row gx-3 gy-4">
+                    <div class="col-xl-12">
+                        <input type="text" class="form-control 
+                                bg-white border-0 py-3 px-4"
+                             placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="col-xl-12">
+                        <input type="password" class="form-control bg-white 
+                        border-0 py-3 px-4" placeholder="Password"formControlName="password">
+                    </div>
+
+                    <div class="col-5">
+                        <button class="btn btn-primary btn-primary-outline-0
+                         w-90 py-2 px-4"[disabled]="loginForms.invalid" >LOGIN</button>
+                    </div>
+                    <p><span style="color:rgb(14, 14, 15);
+                    font-size:16px;position: relative;right:10px;">
+                            Do you have any account?</span>
+                            <a routerLink="/customer-layout/register">register</a></p>
+                           
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
